@@ -268,3 +268,4 @@
 .jt-site .procedure-card .procedure-photo{display:block;width:100%;height:auto;aspect-ratio:1/1;flex:0 0 auto;object-fit:cover;object-position:center;background:#f6f0e5;}
 .jt-site .procedure-card .procedure-content{min-height:265px;flex:1 0 auto;}
 @media(max-width:640px){.jt-site .procedure-card .procedure-photo{aspect-ratio:1/1;height:auto;flex-basis:auto;}.jt-site .procedure-card .procedure-content{min-height:270px;}}
+.procedure-photo-empty{background:linear-gradient(135deg,#f6ead6,#fffdf9);}

@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "e8611611-64b7-46db-931d-b19e9dba2338",
-  "project_id": "c6c250e8-582e-4d00-b6f5-b16fb88fc01b",
-  "url": "/__l5e/assets-v1/e8611611-64b7-46db-931d-b19e9dba2338/massagem-detox.png",
-  "r2_key": "a/v1/c6c250e8-582e-4d00-b6f5-b16fb88fc01b/e8611611-64b7-46db-931d-b19e9dba2338/massagem-detox.png",
-  "original_filename": "massagem-detox.png",
-  "size": 396936,
   "content_type": "image/png",
-  "created_at": "2026-10-05T20:39:16Z"
+  "created_at": "2026-10-05T20:39:16Z",
+  "original_filename": "massagem-detox.png",
+  "project_id": "c784587c-e069-428c-aa72-f9ddaaf1ae81",
+  "r2_key": "a/v1/c784587c-e069-428c-aa72-f9ddaaf1ae81/e8611611-64b7-46db-931d-b19e9dba2338/massagem-detox.png",
+  "size": 396936,
+  "url": "/__l5e/assets-v1/e8611611-64b7-46db-931d-b19e9dba2338/massagem-detox.png",
+  "version": 1
 }

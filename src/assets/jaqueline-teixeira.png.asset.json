@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "bfdd063b-32ef-4e30-9e6a-c79c3fb5e4fe",
-  "project_id": "c6c250e8-582e-4d00-b6f5-b16fb88fc01b",
-  "url": "/__l5e/assets-v1/bfdd063b-32ef-4e30-9e6a-c79c3fb5e4fe/jaqueline-teixeira.png",
-  "r2_key": "a/v1/c6c250e8-582e-4d00-b6f5-b16fb88fc01b/bfdd063b-32ef-4e30-9e6a-c79c3fb5e4fe/jaqueline-teixeira.png",
-  "original_filename": "jaqueline-teixeira.png",
-  "size": 1128268,
   "content_type": "image/png",
-  "created_at": "2026-10-05T20:39:24Z"
+  "created_at": "2026-10-05T20:39:24Z",
+  "original_filename": "jaqueline-teixeira.png",
+  "project_id": "c784587c-e069-428c-aa72-f9ddaaf1ae81",
+  "r2_key": "a/v1/c784587c-e069-428c-aa72-f9ddaaf1ae81/bfdd063b-32ef-4e30-9e6a-c79c3fb5e4fe/jaqueline-teixeira.png",
+  "size": 1128268,
+  "url": "/__l5e/assets-v1/bfdd063b-32ef-4e30-9e6a-c79c3fb5e4fe/jaqueline-teixeira.png",
+  "version": 1
 }

@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "c8a9def2-a195-4571-bf7f-9efd3513aaa0",
-  "project_id": "c6c250e8-582e-4d00-b6f5-b16fb88fc01b",
-  "url": "/__l5e/assets-v1/c8a9def2-a195-4571-bf7f-9efd3513aaa0/radiofrequencia-corporal.png",
-  "r2_key": "a/v1/c6c250e8-582e-4d00-b6f5-b16fb88fc01b/c8a9def2-a195-4571-bf7f-9efd3513aaa0/radiofrequencia-corporal.png",
-  "original_filename": "radiofrequencia-corporal.png",
-  "size": 409156,
   "content_type": "image/png",
-  "created_at": "2026-10-05T20:36:22Z"
+  "created_at": "2026-10-05T20:36:22Z",
+  "original_filename": "radiofrequencia-corporal.png",
+  "project_id": "c784587c-e069-428c-aa72-f9ddaaf1ae81",
+  "r2_key": "a/v1/c784587c-e069-428c-aa72-f9ddaaf1ae81/c8a9def2-a195-4571-bf7f-9efd3513aaa0/radiofrequencia-corporal.png",
+  "size": 409156,
+  "url": "/__l5e/assets-v1/c8a9def2-a195-4571-bf7f-9efd3513aaa0/radiofrequencia-corporal.png",
+  "version": 1
 }

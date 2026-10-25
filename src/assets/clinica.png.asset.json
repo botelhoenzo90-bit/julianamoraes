@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "bc3240f8-33cd-45be-b71c-89711ac98836",
-  "project_id": "c6c250e8-582e-4d00-b6f5-b16fb88fc01b",
-  "url": "/__l5e/assets-v1/bc3240f8-33cd-45be-b71c-89711ac98836/clinica.png",
-  "r2_key": "a/v1/c6c250e8-582e-4d00-b6f5-b16fb88fc01b/bc3240f8-33cd-45be-b71c-89711ac98836/clinica.png",
-  "original_filename": "clinica.png",
-  "size": 372627,
   "content_type": "image/png",
-  "created_at": "2026-10-05T20:39:21Z"
+  "created_at": "2026-10-05T20:39:21Z",
+  "original_filename": "clinica.png",
+  "project_id": "c784587c-e069-428c-aa72-f9ddaaf1ae81",
+  "r2_key": "a/v1/c784587c-e069-428c-aa72-f9ddaaf1ae81/bc3240f8-33cd-45be-b71c-89711ac98836/clinica.png",
+  "size": 372627,
+  "url": "/__l5e/assets-v1/bc3240f8-33cd-45be-b71c-89711ac98836/clinica.png",
+  "version": 1
 }

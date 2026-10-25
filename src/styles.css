@@ -201,3 +201,44 @@
   .jt-site .step-card p,.jt-site .benefit-grid p{font-size:14px}
   .jt-site .floating-wa{width:58px;height:58px}
 }
+
+
+/* Refinamento final: marca maior, retrato quadrado, seção em largura total e dourado */
+.jt-site .hero-logo{width:min(330px,82vw);margin:0 auto 26px}
+.jt-site .hero-logo img{width:100%;height:auto;max-height:165px;object-fit:contain}
+.jt-site .intro-photo{width:100%;height:auto;aspect-ratio:1/1;max-width:500px;margin-inline:auto;border-radius:26px;overflow:hidden;border:1px solid rgba(168,132,62,.38);box-shadow:0 18px 42px rgba(75,55,30,.12)}
+.jt-site .intro-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;border-radius:inherit}
+.jt-site .footer-brand img{width:235px;height:100px;max-width:100%;object-fit:contain}
+.jt-site .about-section{width:100%;padding:0;background:#f4eddf}
+.jt-site .about-section>.container{width:100%;max-width:none;margin:0;padding:0}
+.jt-site .about-section .about-card{width:100%;max-width:none;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;margin:0;padding:0;border-radius:0;background:transparent;box-shadow:none;align-items:stretch}
+.jt-site .about-section .about-photo{width:100%;height:100%;min-height:540px;margin:0;border:0;border-radius:0;box-shadow:none;overflow:hidden}
+.jt-site .about-section .about-photo img{width:100%;height:100%;min-height:540px;object-fit:cover;border-radius:0}
+.jt-site .about-section .about-copy{width:100%;max-width:760px;justify-self:center;align-self:center;padding:clamp(34px,5.5vw,84px);text-align:left}
+.jt-site .about-section .about-copy .eyebrow{color:#8d6b2b}
+.jt-site .about-section .about-copy h2{font-size:clamp(34px,3.4vw,48px);line-height:1.12}
+.jt-site .about-section .about-copy p{font-size:16px;line-height:1.85}
+.jt-site .about-section .about-points{justify-content:flex-start;flex-wrap:wrap}
+.jt-site .benefits-section{background:#fbf7ee}
+.jt-site .benefits-section .section-heading{max-width:850px;margin:0 auto 34px}
+.jt-site .benefits-section .section-heading p{font-size:16px;line-height:1.8}
+.jt-site .benefit-grid{gap:18px}
+.jt-site .benefit-grid article{background:#fffdf8!important;border:1px solid rgba(168,132,62,.32);border-radius:20px;box-shadow:0 12px 28px rgba(96,73,30,.07);transition:transform .2s,border-color .2s,box-shadow .2s}
+.jt-site .benefit-grid article:hover{transform:translateY(-3px);border-color:#b99a55;box-shadow:0 16px 34px rgba(133,101,43,.13)}
+.jt-site .benefit-grid article>span{color:#9b762e}
+.jt-site .benefit-grid article>svg,.jt-site .benefit-grid h3{color:#9b762e}
+.jt-site .benefit-grid p{font-size:15px;line-height:1.75;color:#655d50}
+.jt-site .benefits-section .section-action{margin-top:28px}
+@media(max-width:780px){
+  .jt-site .hero-logo{width:min(290px,78vw);margin-bottom:22px}
+  .jt-site .hero-logo img{max-height:145px}
+  .jt-site .intro-photo{width:min(100%,420px);height:auto;aspect-ratio:1/1;border-radius:22px}
+  .jt-site .about-section .about-card{grid-template-columns:1fr}
+  .jt-site .about-section .about-photo{height:auto;min-height:0;aspect-ratio:1/1;max-height:440px}
+  .jt-site .about-section .about-photo img{height:100%;min-height:0;aspect-ratio:1/1}
+  .jt-site .about-section .about-copy{padding:34px 24px 42px;text-align:center}
+  .jt-site .about-section .about-copy .eyebrow{justify-content:center}
+  .jt-site .about-section .about-points{justify-content:center}
+  .jt-site .footer-brand img{width:220px;height:92px}
+  .jt-site .benefit-grid{gap:14px}
+}

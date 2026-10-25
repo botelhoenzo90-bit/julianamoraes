@@ -90,3 +90,10 @@
   .procedure-content{min-height:265px;padding:15px 16px 20px}
   .procedure-card h3{font-size:19px}
 }
+
+
+/* Ajustes de copy e composição solicitados */
+.hero{padding-top:54px}
+.hero-logo{display:none!important}
+.limine-photo{display:none!important}
+.procedure-card .procedure-book{display:none!important}

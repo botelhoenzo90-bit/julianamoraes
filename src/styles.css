@@ -242,3 +242,18 @@
   .jt-site .footer-brand img{width:220px;height:92px}
   .jt-site .benefit-grid{gap:14px}
 }
+
+
+/* NOSSO ESPAÇO: foto horizontal, menor e centralizada */
+.jt-site .about-section .about-card{grid-template-columns:minmax(0,1fr);justify-items:center;gap:0;padding:48px 24px 56px}
+.jt-site .about-section .about-photo{width:min(100%,760px);height:auto;min-height:0;aspect-ratio:16/9;margin:0 auto 30px;border:1px solid rgba(168,132,62,.35);border-radius:22px;overflow:hidden;box-shadow:0 16px 38px rgba(75,55,30,.12)}
+.jt-site .about-section .about-photo img{width:100%;height:100%;min-height:0;aspect-ratio:16/9;object-fit:cover;object-position:center;border-radius:inherit}
+.jt-site .about-section .about-copy{width:min(100%,850px);max-width:850px;padding:0 16px;text-align:center}
+.jt-site .about-section .about-copy .eyebrow{justify-content:center}
+.jt-site .about-section .about-points{justify-content:center}
+@media(max-width:780px){
+  .jt-site .about-section .about-card{grid-template-columns:minmax(0,1fr);padding:32px 18px 40px}
+  .jt-site .about-section .about-photo{width:min(100%,520px);height:auto;min-height:0;aspect-ratio:16/9;margin-bottom:24px;border-radius:17px}
+  .jt-site .about-section .about-photo img{height:100%;min-height:0;aspect-ratio:16/9;object-fit:cover;border-radius:inherit}
+  .jt-site .about-section .about-copy{padding:0 4px;text-align:center}
+}

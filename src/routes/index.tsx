@@ -5,6 +5,7 @@ import whatsappAsset from "@/assets/whatsapp.png.asset.json";
 import julianaAsset from "@/assets/juliana-moraes.png.asset.json";
 import logoAsset from "@/assets/logo-juliana-moraes.png.asset.json";
 import shareAsset from "@/assets/compartilhamento-juliana-moraes.png.asset.json";
+import clinicaAsset from "@/assets/clinica.png.asset.json";
 const SHARE_IMG = "https://julianamoraes.lovable.app" + shareAsset.url;
 
 export const Route = createFileRoute("/")({

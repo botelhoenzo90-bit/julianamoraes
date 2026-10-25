@@ -71,3 +71,22 @@
 .procedure-book{display:inline-flex;align-items:center;justify-content:center;gap:7px;margin-top:13px;padding:10px 13px;border:0;border-radius:999px;background:linear-gradient(135deg,#b99a55,#85652b);color:#fff;font-size:11px;font-weight:800;cursor:pointer;transition:transform .2s,box-shadow .2s}
 .procedure-book:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(133,101,43,.2)}
 .procedure-card .procedure-photo{background:#f6f0e5}
+
+
+/* Correção do carrossel de procedimentos: cartões sem conteúdo cortado */
+.procedure-window{overflow:hidden;min-width:0;padding-top:10px;padding-bottom:22px}
+.procedure-track{align-items:stretch}
+.procedure-card{height:auto;min-height:440px;flex:0 0 280px;overflow:hidden}
+.procedure-photo,.procedure-placeholder{height:190px;flex:0 0 190px;object-fit:cover}
+.procedure-content{height:auto;min-height:250px;flex:1 0 auto;padding:16px 18px 20px;overflow:visible}
+.procedure-card h3{overflow-wrap:anywhere}
+.procedure-card p{min-height:0;overflow:visible}
+.procedure-card button.procedure-book{display:inline-flex;max-width:100%;white-space:normal}
+@media(max-width:780px){
+  .procedure-window{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);padding:10px 0 22px}
+  .procedure-track{gap:12px}
+  .procedure-card{flex-basis: min(82vw, 310px);min-height:450px}
+  .procedure-photo,.procedure-placeholder{height:185px;flex-basis:185px}
+  .procedure-content{min-height:265px;padding:15px 16px 20px}
+  .procedure-card h3{font-size:19px}
+}

@@ -30,29 +30,29 @@ export const Route = createFileRoute("/")({
 const WHATSAPP = "https://wa.me/message/ZP73PATFBKLQN1";
 const INSTAGRAM = "https://www.instagram.com/julianamoraes_esteticista/";
 const MAP = "https://www.google.com/maps/search/?api=1&query=Avenida+Doutor+Arruda+Negreiros,+93,+sala+08,+Sao+Joao+de+Meriti,+RJ";
-const photo = (n: number) => "/procedimentos/foto-" + String(n).padStart(2, "0") + ".webp";
+const procedureImage = (filename: string) => "/procedimentos/" + encodeURIComponent(filename);
 
 const procedures = [
-  { title: "Micropigmentação Labial", price: "R$ 600,00", text: "Realça a cor natural dos lábios, com efeito delicado e aspecto rejuvenescido. Valor sem retoque.", image: photo(1) },
-  { title: "Camuflagem de Estrias", price: "A partir de R$ 150", text: "Ajuda a uniformizar o tom da pele e deixar as estrias menos aparentes.", image: photo(2) },
-  { title: "Limpeza de Pele Profunda", price: "R$ 130", text: "Remove impurezas, auxilia no controle da oleosidade e renova a aparência da pele.", image: photo(3) },
-  { title: "Tratamento para Gordura Localizada", price: "Sob consulta", text: "Protocolo estético personalizado para cuidar do contorno corporal.", image: photo(4) },
-  { title: "Drenagem Linfática Pós-Operatório", price: "R$ 99,90", text: "Cuidado para auxiliar no conforto e na recuperação, conforme liberação profissional.", image: photo(5) },
-  { title: "Design de Sobrancelhas com Henna", price: "R$ 45", text: "Modela e preenche as sobrancelhas, valorizando o olhar com efeito natural.", image: photo(7) },
-  { title: "Design com Coloração", price: "R$ 60", text: "Realça e define as sobrancelhas com coloração dos fios.", image: photo(8) },
-  { title: "Tratamento de Estrias (Microderme)", price: "A partir de R$ 150", text: "Tratamento estético voltado à melhora da aparência de estrias brancas e roxas.", image: photo(9) },
-  { title: "Aréolas Realistas", price: "R$ 1.300", text: "Pigmentação estética com efeito realista para reconstrução visual da aréola.", image: photo(10) },
-  { title: "Camuflagem de Cicatriz", price: "Sob consulta", text: "Pigmentação estética para suavizar visualmente a aparência de cicatrizes.", image: photo(11) },
-  { title: "Neutralização de Olheiras", price: "R$ 800,00", text: "Procedimento de pigmentação para harmonizar a tonalidade da região abaixo dos olhos. Valor sem retoque.", image: photo(12) },
-  { title: "BB Glow", price: "R$ 350", text: "Procedimento estético que busca uma aparência mais iluminada e uniforme. Valor por sessão.", image: photo(13) },
-  { title: "Cílios Tufinho", price: "R$ 45", text: "Aplicação de tufos para realçar o olhar.", image: photo(14) },
-  { title: "Estética Íntima", price: "Sob consulta", text: "Cuidados estéticos personalizados para a região íntima, após avaliação.", image: photo(15) },
-  { title: "Clareamento em Região Íntima", price: "Sob consulta", text: "Protocolo estético gradual e individualizado para a região íntima.", image: photo(16) },
-  { title: "Microagulhamento Facial", price: "R$ 250", text: "Procedimento voltado à textura e aparência da pele, indicado após avaliação.", image: photo(17) },
-  { title: "Dermaplaning + Revitalização", price: "R$ 120", text: "Remove células superficiais e promove uma aparência renovada e luminosa.", image: photo(18) },
-  { title: "Peeling Químico", price: "A partir de R$ 250", text: "Tratamento facial escolhido conforme as características e necessidades da pele.", image: photo(19) },
-  { title: "Depilação com Cera Hidrossolúvel", price: "Sob consulta", text: "Remoção dos pelos com atenção ao conforto e cuidado da pele.", image: photo(20) },
-  { title: "Brow Lamination", price: "R$ 150,00", text: "Alinha e modela os fios das sobrancelhas para um visual mais definido e volumoso.", image: photo(8) },
+  { title: "Micropigmentação Labial", price: "R$ 600,00", text: "Realça a cor natural dos lábios, com efeito delicado e aspecto rejuvenescido. Valor sem retoque.", image: procedureImage("Micropigmentação labial em close-up.png") },
+  { title: "Camuflagem de Estrias", price: "A partir de R$ 150", text: "Ajuda a uniformizar o tom da pele e deixar as estrias menos aparentes.", image: procedureImage("Tratamento de Estrias em Clínica Dermatológica.png") },
+  { title: "Limpeza de Pele Profunda", price: "R$ 130", text: "Remove impurezas, auxilia no controle da oleosidade e renova a aparência da pele.", image: procedureImage("Limpeza facial profissional no spa.png") },
+  { title: "Tratamento para Gordura Localizada", price: "Sob consulta", text: "Protocolo estético personalizado para cuidar do contorno corporal.", image: procedureImage("Tratamento de Contorno Corporal no Abdômen.png") },
+  { title: "Drenagem Linfática Pós-Operatório", price: "R$ 99,90", text: "Cuidado para auxiliar no conforto e na recuperação, conforme liberação profissional.", image: procedureImage("Massagem abdominal relaxante no spa.png") },
+  { title: "Design de Sobrancelhas com Henna", price: "R$ 45", text: "Modela e preenche as sobrancelhas, valorizando o olhar com efeito natural.", image: procedureImage("Aplicação de Henna nas Sobrancelhas.png") },
+  { title: "Design com Coloração", price: "R$ 60", text: "Realça e define as sobrancelhas com coloração dos fios.", image: procedureImage("Laminação de sobrancelhas em close-up.png") },
+  { title: "Tratamento de Estrias (Microderme)", price: "A partir de R$ 150", text: "Tratamento estético voltado à melhora da aparência de estrias brancas e roxas.", image: procedureImage("Tratamento de Estrias com Dermapen.png") },
+  { title: "Aréolas Realistas", price: "R$ 1.300", text: "Pigmentação estética com efeito realista para reconstrução visual da aréola.", image: procedureImage("images 9 aerola.jpg") },
+  { title: "Camuflagem de Cicatriz", price: "Sob consulta", text: "Pigmentação estética para suavizar visualmente a aparência de cicatrizes.", image: procedureImage("Camuflagem de cicatriz com micropigmentação.png") },
+  { title: "Neutralização de Olheiras", price: "R$ 800,00", text: "Procedimento de pigmentação para harmonizar a tonalidade da região abaixo dos olhos. Valor sem retoque.", image: procedureImage("Tratamento Estético em Ambiente de Spa.png") },
+  { title: "BB Glow", price: "R$ 350", text: "Procedimento estético que busca uma aparência mais iluminada e uniforme. Valor por sessão.", image: procedureImage("Tratamento Estético em Ambiente de Spa.png") },
+  { title: "Cílios Tufinho", price: "R$ 45", text: "Aplicação de tufos para realçar o olhar.", image: procedureImage("Laminação de sobrancelhas em close-up.png") },
+  { title: "Estética Íntima", price: "Sob consulta", text: "Cuidados estéticos personalizados para a região íntima, após avaliação.", image: procedureImage("Estetica-Intima-1.jpg") },
+  { title: "Clareamento em Região Íntima", price: "Sob consulta", text: "Protocolo estético gradual e individualizado para a região íntima.", image: procedureImage("Estetica-Intima-1.jpg") },
+  { title: "Microagulhamento Facial", price: "R$ 250", text: "Procedimento voltado à textura e aparência da pele, indicado após avaliação.", image: procedureImage("Tratamento Facial com Microagulhamento.png") },
+  { title: "Dermaplaning + Revitalização", price: "R$ 120", text: "Remove células superficiais e promove uma aparência renovada e luminosa.", image: procedureImage("Tratamento Facial Luxuoso com Dermaplaning.png") },
+  { title: "Peeling Químico", price: "A partir de R$ 250", text: "Tratamento facial escolhido conforme as características e necessidades da pele.", image: procedureImage("Tratamento Facial com Peeling Químico.png") },
+  { title: "Depilação com Cera Hidrossolúvel", price: "Sob consulta", text: "Remoção dos pelos com atenção ao conforto e cuidado da pele.", image: procedureImage("Depilação com cera dourada no spa.png") },
+  { title: "Brow Lamination", price: "R$ 150,00", text: "Alinha e modela os fios das sobrancelhas para um visual mais definido e volumoso.", image: procedureImage("Laminação de sobrancelhas em close-up.png") },
 ];
 
 const faqs = [

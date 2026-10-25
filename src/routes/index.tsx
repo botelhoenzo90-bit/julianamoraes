@@ -8,6 +8,9 @@ import shareAsset from "@/assets/compartilhamento-juliana-moraes.png.asset.json"
 import clinicaAsset from "@/assets/clinica.png.asset.json";
 import bbGlowAsset from "@/assets/bb-glow.png.asset.json";
 import olheirasAsset from "@/assets/neutralizacao-olheiras.png.asset.json";
+import coloracaoAsset from "@/assets/design-com-coloracao.png.asset.json";
+import ciliosAsset from "@/assets/cilios-tufinho.png.asset.json";
+import clareamentoAsset from "@/assets/clareamento-regiao-intima.png.asset.json";
 const SHARE_IMG = "https://julianamoraes.lovable.app" + shareAsset.url;
 
 export const Route = createFileRoute("/")({
@@ -41,15 +44,15 @@ const procedures = [
   { title: "Tratamento para Gordura Localizada", price: "Sob consulta", text: "Protocolo estético personalizado para cuidar do contorno corporal.", image: procedureImage("Tratamento de Contorno Corporal no Abdômen.png") },
   { title: "Drenagem Linfática Pós-Operatório", price: "R$ 99,90", text: "Cuidado para auxiliar no conforto e na recuperação, conforme liberação profissional.", image: procedureImage("Massagem abdominal relaxante no spa.png") },
   { title: "Design de Sobrancelhas com Henna", price: "R$ 45", text: "Modela e preenche as sobrancelhas, valorizando o olhar com efeito natural.", image: procedureImage("Aplicação de Henna nas Sobrancelhas.png") },
-  { title: "Design com Coloração", price: "R$ 60", text: "Realça e define as sobrancelhas com coloração dos fios.", image: "" },
+  { title: "Design com Coloração", price: "R$ 60", text: "Realça e define as sobrancelhas com coloração dos fios.", image: coloracaoAsset.url },
   { title: "Tratamento de Estrias (Microderme)", price: "A partir de R$ 150", text: "Tratamento estético voltado à melhora da aparência de estrias brancas e roxas.", image: procedureImage("Tratamento de Estrias com Dermapen.png") },
   { title: "Aréolas Realistas", price: "R$ 1.300", text: "Pigmentação estética com efeito realista para reconstrução visual da aréola.", image: procedureImage("images 9 aerola.jpg") },
   { title: "Camuflagem de Cicatriz", price: "Sob consulta", text: "Pigmentação estética para suavizar visualmente a aparência de cicatrizes.", image: procedureImage("Camuflagem de cicatriz com micropigmentação.png") },
   { title: "Neutralização de Olheiras", price: "R$ 800,00", text: "Procedimento de pigmentação para harmonizar a tonalidade da região abaixo dos olhos. Valor sem retoque.", image: olheirasAsset.url },
   { title: "BB Glow", price: "R$ 350", text: "Procedimento estético que busca uma aparência mais iluminada e uniforme. Valor por sessão.", image: bbGlowAsset.url },
-  { title: "Cílios Tufinho", price: "R$ 45", text: "Aplicação de tufos para realçar o olhar.", image: "" },
+  { title: "Cílios Tufinho", price: "R$ 45", text: "Aplicação de tufos para realçar o olhar.", image: ciliosAsset.url },
   { title: "Estética Íntima", price: "Sob consulta", text: "Cuidados estéticos personalizados para a região íntima, após avaliação.", image: procedureImage("Estetica-Intima-1.jpg") },
-  { title: "Clareamento em Região Íntima", price: "Sob consulta", text: "Protocolo estético gradual e individualizado para a região íntima.", image: "" },
+  { title: "Clareamento em Região Íntima", price: "Sob consulta", text: "Protocolo estético gradual e individualizado para a região íntima.", image: clareamentoAsset.url },
   { title: "Microagulhamento Facial", price: "R$ 250", text: "Procedimento voltado à textura e aparência da pele, indicado após avaliação.", image: procedureImage("Tratamento Facial com Microagulhamento.png") },
   { title: "Dermaplaning + Revitalização", price: "R$ 120", text: "Remove células superficiais e promove uma aparência renovada e luminosa.", image: procedureImage("Tratamento Facial Luxuoso com Dermaplaning.png") },
   { title: "Peeling Químico", price: "A partir de R$ 250", text: "Tratamento facial escolhido conforme as características e necessidades da pele.", image: procedureImage("Tratamento Facial com Peeling Químico.png") },

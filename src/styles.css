@@ -261,3 +261,10 @@
 
 /* Carrossel de depoimentos um pouco mais rápido */
 .jt-site .reviews-track{animation-duration:40s}
+
+
+/* Cards de procedimentos: imagens quadradas, padronizadas e sem distorção */
+.jt-site .procedure-card{height:auto;min-height:0;}
+.jt-site .procedure-card .procedure-photo{display:block;width:100%;height:auto;aspect-ratio:1/1;flex:0 0 auto;object-fit:cover;object-position:center;background:#f6f0e5;}
+.jt-site .procedure-card .procedure-content{min-height:265px;flex:1 0 auto;}
+@media(max-width:640px){.jt-site .procedure-card .procedure-photo{aspect-ratio:1/1;height:auto;flex-basis:auto;}.jt-site .procedure-card .procedure-content{min-height:270px;}}

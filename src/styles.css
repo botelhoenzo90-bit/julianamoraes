@@ -99,3 +99,105 @@
 .limine-photo{display:none!important}
 .procedure-card .procedure-book{display:none!important}
 .about-photo{width:240px;height:240px;border-radius:50%;overflow:hidden;border:6px solid #fff9e9;box-shadow:0 0 0 1px #d4af37,0 15px 35px rgba(166,124,0,.18)}.about-photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+
+/* Padronização profissional de tipografia, cards e ícones */
+.jt-site{font-size:16px}
+.jt-site p{font-size:16px;line-height:1.75}
+.jt-site .eyebrow{font-size:13px;line-height:1.45;letter-spacing:1.8px}
+.jt-site .nav{font-size:14px;gap:20px}
+.jt-site .brand strong{font-size:14px;letter-spacing:1.5px}
+.jt-site .brand small{font-size:10px;letter-spacing:1.2px}
+.jt-site .header-cta{font-size:13px;padding:12px 18px}
+.jt-site .btn{font-size:14px;min-height:48px;padding:0 22px;gap:9px}
+.jt-site .hero-lead{font-size:17px;line-height:1.8}
+.jt-site .hero-trust{font-size:14px;gap:22px}
+.jt-site .marquee-group span{font-size:13px;padding:15px 25px;letter-spacing:1.6px}
+.jt-site .section-heading p,.jt-site .intro-section p,.jt-site .reviews-heading p{font-size:16px;line-height:1.8}
+.jt-site .about-copy p,.jt-site .copy-block>p,.jt-site .limine-copy>p,.jt-site .faq-intro p{font-size:16px;line-height:1.8}
+.jt-site .about-points span{font-size:14px;padding:11px 14px;gap:8px}
+.jt-site .about-points svg{width:19px;height:19px}
+.jt-site .check-list div{font-size:15px;line-height:1.65;gap:11px}
+.jt-site .check-list svg{width:20px;height:20px}
+.jt-site .procedure-card{flex-basis:300px;min-height:465px}
+.jt-site .procedure-photo,.jt-site .procedure-placeholder{height:200px;flex-basis:200px}
+.jt-site .procedure-content{padding:20px 20px 22px;min-height:265px}
+.jt-site .procedure-icon{width:50px;height:50px}
+.jt-site .procedure-icon svg{width:25px;height:25px}
+.jt-site .procedure-card h3{font-size:21px;line-height:1.25}
+.jt-site .procedure-card p{font-size:14px;line-height:1.65}
+.jt-site .procedure-price{font-size:18px}
+.jt-site .step-card{min-height:205px;padding:26px 20px}
+.jt-site .step-card h3,.jt-site .benefit-grid h3{font-size:21px;line-height:1.3}
+.jt-site .step-card p,.jt-site .benefit-grid p{font-size:14px;line-height:1.7}
+.jt-site .step-number{width:56px;height:56px;font-size:20px}
+.jt-site .benefit-grid article{padding:26px 20px}
+.jt-site .benefit-grid article>span{font-size:12px}
+.jt-site .benefit-grid article>svg{width:28px;height:28px;margin:18px auto}
+.jt-site .mini-benefits strong,.jt-site .limine-benefits strong{font-size:14px}
+.jt-site .mini-benefits small,.jt-site .limine-benefits small{font-size:13px;line-height:1.55}
+.jt-site .mini-benefits>div{padding:15px;gap:12px}
+.jt-site .feature-grid{gap:12px}
+.jt-site .feature-grid div{padding:15px;gap:8px}
+.jt-site .feature-grid strong{font-size:14px}
+.jt-site .feature-grid span{font-size:13px;line-height:1.55}
+.jt-site .floating-card strong{font-size:13px}
+.jt-site .floating-card small{font-size:12px}
+.jt-site .review-card{width:360px;padding:26px;min-height:255px}
+.jt-site .review-card>p{font-size:17px;line-height:1.65}
+.jt-site .review-footer strong{font-size:13px}
+.jt-site .review-footer span{font-size:12px}
+.jt-site .review-avatar{width:42px;height:42px;font-size:18px}
+.jt-site .faq-item button{font-size:15px;line-height:1.55;padding:20px;gap:14px}
+.jt-site .faq-answer p{font-size:14px;line-height:1.75}
+.jt-site .address strong{font-size:15px}
+.jt-site .address span,.jt-site .address small{font-size:13px;line-height:1.5}
+.jt-site .location-info span{font-size:12px;line-height:1.5}
+.jt-site .location-info strong{font-size:14px}
+.jt-site .location-info svg{width:21px;height:21px}
+.jt-site .technology-image>span{font-size:12px;line-height:1.6;padding:14px}
+.jt-site .faq-section .faq-final-cta{font-size:14px}
+.jt-site .campaign-copy p,.jt-site .final-cta p{font-size:16px;line-height:1.8}
+.jt-site .campaign-stamp{width:108px;height:108px;font-size:27px}
+.jt-site .campaign-stamp small{font-size:10px}
+.jt-site .footer p{font-size:13px;line-height:1.75}
+.jt-site .footer h4{font-size:19px}
+.jt-site .footer-grid a,.jt-site .footer-grid span{font-size:13px;line-height:1.6}
+.jt-site .footer-bottom{font-size:11px;line-height:1.6}
+.jt-site .brand-logo img{width:180px;height:68px}
+.jt-site .floating-wa{width:62px;height:62px}
+
+/* Foto horizontal na seção NOSSO ESPAÇO, sem recorte circular */
+.jt-site .about-card{grid-template-columns:minmax(0,1fr);justify-items:stretch}
+.jt-site .about-photo{width:min(100%,560px);height:320px;margin:0 auto;border-radius:22px;overflow:hidden;border:6px solid #fff9e9;box-shadow:0 0 0 1px #d4af37,0 15px 35px rgba(166,124,0,.16)}
+.jt-site .about-photo img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;border-radius:16px}
+.jt-site .about-copy{max-width:760px}
+@media(max-width:780px){
+  .jt-site p,.jt-site .section-heading p,.jt-site .intro-section p,.jt-site .about-copy p,.jt-site .copy-block>p,.jt-site .limine-copy>p,.jt-site .faq-intro p{font-size:15px;line-height:1.75}
+  .jt-site .hero-lead{font-size:16px}
+  .jt-site .eyebrow{font-size:12px;letter-spacing:1.4px}
+  .jt-site .btn{font-size:14px;min-height:48px;padding:0 18px}
+  .jt-site .about-photo{width:100%;height:260px;border-radius:20px}
+  .jt-site .about-photo img{border-radius:14px}
+  .jt-site .procedure-card{flex-basis:min(84vw,320px);min-height:465px}
+  .jt-site .procedure-photo,.jt-site .procedure-placeholder{height:190px;flex-basis:190px}
+  .jt-site .procedure-content{min-height:275px;padding:18px}
+  .jt-site .procedure-card h3{font-size:20px}
+  .jt-site .procedure-card p{font-size:14px}
+  .jt-site .review-card{width:min(86vw,330px);padding:22px;min-height:245px}
+  .jt-site .review-card>p{font-size:16px}
+  .jt-site .step-card{padding:20px 14px;min-height:190px}
+  .jt-site .step-card h3,.jt-site .benefit-grid h3{font-size:19px}
+  .jt-site .step-card p,.jt-site .benefit-grid p{font-size:14px}
+  .jt-site .faq-item button{font-size:14px;padding:17px}
+  .jt-site .footer-grid a,.jt-site .footer-grid span{font-size:13px}
+}
+@media(max-width:480px){
+  .jt-site .hero h1{font-size:clamp(38px,10vw,44px);letter-spacing:-1.5px}
+  .jt-site .section h2{font-size:clamp(31px,8vw,37px);letter-spacing:-.8px}
+  .jt-site .about-photo{height:230px}
+  .jt-site .about-points{align-items:stretch}
+  .jt-site .about-points span{justify-content:center;font-size:13px}
+  .jt-site .step-card p,.jt-site .benefit-grid p{font-size:14px}
+  .jt-site .floating-wa{width:58px;height:58px}
+}

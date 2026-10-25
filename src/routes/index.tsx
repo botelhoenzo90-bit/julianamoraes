@@ -6,10 +6,10 @@ import whatsappAsset from "@/assets/whatsapp.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Juliana Moraes | Estética & Beleza" },
-      { name: "description", content: "Procedimentos estéticos em São João de Meriti, RJ: micropigmentação, camuflagem de estrias, limpeza de pele e cuidados personalizados." },
-      { property: "og:title", content: "Juliana Moraes | Estética & Beleza" },
-      { property: "og:description", content: "Realce sua beleza com procedimentos estéticos personalizados e atendimento acolhedor." },
+      { title: "Juliana Moraes | Camuflagem | Estética | Depilação" },
+      { name: "description", content: "Camuflagem, estética e depilação com Juliana Moraes em São João de Meriti, RJ. Conheça os procedimentos e agende seu atendimento." },
+      { property: "og:title", content: "Juliana Moraes | Camuflagem | Estética | Depilação" },
+      { property: "og:description", content: "Juliana Moraes: camuflagem, estética e depilação com atendimento personalizado." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://julianamoraes.netlify.app/" },
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP = "https://wa.me/5521994656255";
+const WHATSAPP = "https://wa.me/message/ZP73PATFBKLQN1";
 const INSTAGRAM = "https://www.instagram.com/julianamoraes_esteticista/";
 const MAP = "https://www.google.com/maps/search/?api=1&query=Avenida+Doutor+Arruda+Negreiros,+93,+sala+08,+Sao+Joao+de+Meriti,+RJ";
 const photo = (n: number) => "/procedimentos/foto-" + String(n).padStart(2, "0") + ".webp";
@@ -66,7 +66,7 @@ function Index() {
   return (
     <main className="jt-site">
       <section className="hero" id="inicio"><div className="container hero-grid"><div className="hero-copy center-hero">
-        <a className="hero-logo" href="#inicio" aria-label="Juliana Moraes Estética e Beleza"><img src="/images/logo-juliana-moraes.webp" alt="Juliana Moraes" onError={(e) => { e.currentTarget.style.display = "none"; }} /><span>Juliana Moraes <small>Estética & Beleza</small></span></a>
+        <a className="hero-logo" href="#inicio" aria-label="Juliana Moraes Estética e Beleza"><img src="/images/logo-juliana-moraes.webp" alt="Juliana Moraes" onError={(e) => { e.currentTarget.style.display = "none"; }} /><span>Juliana Moraes <small>Camuflagem | Estética | Depilação</small></span></a>
         <h1>Realce sua beleza com <em>cuidado e confiança.</em></h1><p className="hero-lead">Procedimentos estéticos personalizados para valorizar sua beleza natural, cuidar da pele e elevar sua autoestima — com atenção em cada detalhe.</p>
         <div className="hero-actions"><button className="btn btn-primary" onClick={() => goWhatsapp("agendar um procedimento")}><MessageCircle size={19} /> Quero agendar</button><a className="btn btn-outline" href="#procedimentos">Conhecer procedimentos <ArrowRight size={18} /></a></div>
         <div className="hero-trust"><span><Check size={15} /> Atendimento personalizado</span><span><Check size={15} /> São João de Meriti • RJ</span></div>
@@ -98,7 +98,7 @@ function Index() {
 
       <section className="final-cta"><div className="final-glow"/><div className="container center"><span className="eyebrow light">SEU MOMENTO COMEÇA COM UMA MENSAGEM</span><h2>Pronta para realçar sua beleza e cuidar de você?</h2><p>Converse com Juliana, tire suas dúvidas e encontre o procedimento que combina com seus objetivos.</p><button className="btn btn-primary" onClick={() => goWhatsapp("agendar meu atendimento")}><MessageCircle size={19}/> Quero agendar meu atendimento</button></div></section>
 
-      <footer className="footer"><div className="container footer-grid"><div><a className="brand footer-brand brand-logo" href="#inicio"><img src="/images/logo-juliana-moraes.webp" alt="Juliana Moraes Estética e Beleza" onError={(e) => { e.currentTarget.style.display = "none"; }} /><span>Juliana Moraes • Estética & Beleza</span></a><p>Procedimentos estéticos e atendimento personalizado em São João de Meriti - RJ.</p></div><div><h4>Atalhos</h4><a href="#procedimentos">Procedimentos</a><a href="#juliana">Sobre Juliana</a><a href="#como-funciona">Como funciona</a><a href="#faq">Perguntas frequentes</a><a href="#localizacao">Localização</a></div><div><h4>Contato</h4><a href={WHATSAPP} target="_blank" rel="noreferrer"><MessageCircle size={15}/> WhatsApp</a><a href={INSTAGRAM} target="_blank" rel="noreferrer"><Instagram size={15}/> Instagram</a><span><MapPin size={15}/> São João de Meriti • RJ</span></div></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} Juliana Moraes. Todos os direitos reservados.</span><span>Estética & Beleza</span></div></footer>
+      <footer className="footer"><div className="container footer-grid"><div><a className="brand footer-brand brand-logo" href="#inicio"><img src="/images/logo-juliana-moraes.webp" alt="Juliana Moraes Estética e Beleza" onError={(e) => { e.currentTarget.style.display = "none"; }} /><span>Juliana Moraes | Camuflagem | Estética | Depilação</span></a><p>Camuflagem, estética e depilação com atendimento personalizado em São João de Meriti - RJ.</p></div><div><h4>Atalhos</h4><a href="#procedimentos">Procedimentos</a><a href="#juliana">Sobre Juliana</a><a href="#como-funciona">Como funciona</a><a href="#faq">Perguntas frequentes</a><a href="#localizacao">Localização</a></div><div><h4>Contato</h4><a href={WHATSAPP} target="_blank" rel="noreferrer"><MessageCircle size={15}/> WhatsApp</a><a href={INSTAGRAM} target="_blank" rel="noreferrer"><Instagram size={15}/> Instagram</a><span><MapPin size={15}/> São João de Meriti • RJ</span></div></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} Juliana Moraes. Todos os direitos reservados.</span><span>Estética & Beleza</span></div></footer>
 
       <a className="floating-wa" href={WHATSAPP} target="_blank" rel="noreferrer" aria-label="Falar no WhatsApp"><img src={whatsappAsset.url} alt="" /></a>
     </main>

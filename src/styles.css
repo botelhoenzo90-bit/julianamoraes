@@ -97,3 +97,4 @@
 .hero-logo{display:none!important}
 .limine-photo{display:none!important}
 .procedure-card .procedure-book{display:none!important}
+.about-photo{width:240px;height:240px;border-radius:50%;overflow:hidden;border:6px solid #fff9e9;box-shadow:0 0 0 1px #d4af37,0 15px 35px rgba(166,124,0,.18)}.about-photo img{width:100%;height:100%;object-fit:cover;display:block}

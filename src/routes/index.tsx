@@ -93,6 +93,39 @@ function Index() {
 
       <section className="section procedures-section" id="procedimentos"><div className="container"><div className="section-heading center"><span className="eyebrow">SERVIÇOS</span><h2>Encontre o procedimento ideal para <em>realçar sua beleza.</em></h2><p>Conheça os serviços, confira os valores e fale com Juliana para tirar dúvidas e agendar seu atendimento.</p></div><div className="procedure-window"><div className="procedure-track">{[...procedures,...procedures].map(({title,text,price,image},i)=><article className={"procedure-card" + (image ? " has-image" : "")} key={title + i}>{image ? <img className="procedure-photo" src={image} onError={(e) => { e.currentTarget.src = "https://julianamoraes.netlify.app/foto-" + String(((i % procedures.length) + 1)).padStart(2, "0") + ".webp"; }} alt={title + " — Juliana Moraes"} loading="lazy" /> : <div className="procedure-photo procedure-photo-empty" aria-hidden="true" />}<div className="procedure-content"><div className="procedure-icon"><Sparkles size={21}/></div><span className="procedure-number">{String((i%procedures.length)+1).padStart(2,"0")}</span><h3>{title}</h3><strong className="procedure-price">{price}</strong><p>{text}</p></div></article>)}</div></div><div className="section-action center"><button className="btn btn-primary" onClick={() => goWhatsapp("consultar procedimentos e horários disponíveis")}><MessageCircle size={18}/> Ver opções e horários</button></div></div></section>
 
+      <section className="section before-after-section" id="antes-depois">
+        <div className="container">
+          <div className="section-heading center">
+            <span className="eyebrow">RESULTADOS REAIS</span>
+            <h2>Antes e depois: cada detalhe <em>faz diferença.</em></h2>
+            <p>Veja a evolução dos procedimentos realizados por Juliana. As imagens serão adicionadas aqui assim que a galeria estiver pronta.</p>
+          </div>
+          <div className="before-after-grid">
+            {[1,2,3].map((caso) => (
+              <article className="before-after-card" key={caso}>
+                <div className="before-after-pair">
+                  {(["antes","depois"] as const).map((fase) => (
+                    <div className="before-after-photo" key={fase}>
+                      <img
+                        src={`/antes-depois/caso-${caso}-${fase}.jpg`}
+                        alt={`Caso ${caso} — ${fase} do procedimento`}
+                        loading="lazy"
+                        onLoad={(e) => { const placeholder = e.currentTarget.parentElement?.querySelector(".before-after-placeholder"); if (placeholder) (placeholder as HTMLElement).style.display = "none"; }}
+                        onError={(e) => { e.currentTarget.style.display = "none"; }}
+                      />
+                      <div className="before-after-placeholder"><Sparkles size={22}/><span>Adicionar foto</span></div>
+                      <span className={`before-after-label ${fase}`}>{fase.toUpperCase()}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="before-after-caption"><span>CASO {String(caso).padStart(2,"0")}</span><p>Resultado após avaliação e procedimento personalizado.</p></div>
+              </article>
+            ))}
+          </div>
+          <p className="before-after-note">Os resultados variam conforme as características individuais e os cuidados de cada pessoa.</p>
+        </div>
+      </section>
+
       <section className="section reviews-section" id="experiencia"><div className="reviews-heading"><span className="eyebrow">ATENDIMENTO PERSONALIZADO</span><h2>Cuidado individual em cada <em>etapa.</em></h2><p>Converse com Juliana, conheça os procedimentos e tire suas dúvidas antes de agendar.</p></div><div className="reviews-window"><div className="reviews-track">{[1,2,3,4,5,6,1,2,3,4,5,6].map((n,i)=><article className="review-card" key={i}><div className="review-stars">{[1,2,3,4,5].map(star=><Star key={star} size={15} fill="currentColor"/>)}</div><p>“Um atendimento acolhedor, com atenção aos detalhes e orientação em cada etapa do procedimento.”</p><div className="review-footer"><div className="review-avatar">J</div><div><strong>Juliana Moraes</strong><span>Atendimento individualizado</span></div></div></article>)}</div></div><div className="section-action center"><button className="btn btn-primary" onClick={() => goWhatsapp("conhecer os procedimentos e agendar")}><MessageCircle size={18}/> Quero agendar</button></div></section>
 
       <section className="section about-section" id="juliana"><div className="container about-card"><div className="about-photo clinic-photo"><img src={clinicaAsset.url} style={{ width: "100%", height: "100%", objectFit: "cover" }} alt="Interior elegante e acolhedor da clínica de estética" loading="lazy" /></div><div className="about-copy"><span className="eyebrow">NOSSO ESPAÇO</span><h2>Um ambiente pensado para seu <em>bem-estar.</em></h2><p>A clínica foi pensada para receber você em um ambiente acolhedor, tranquilo e dedicado ao autocuidado. Aqui, cada visita é uma oportunidade de pausar a rotina, conhecer opções de tratamento e dedicar atenção à sua beleza.</p><p>Do primeiro contato à escolha do procedimento, queremos que você se sinta à vontade para conversar, esclarecer dúvidas e entender cada etapa com tranquilidade. Seu conforto e uma experiência cuidadosa fazem parte desse momento.</p><div className="about-points"><span><Heart size={17}/> Acolhimento e conforto</span><span><Sparkles size={17}/> Cuidado com os detalhes</span><span><Check size={17}/> Orientação individual</span></div><button className="btn btn-primary" onClick={() => goWhatsapp("conhecer a clínica e agendar uma visita")}><MessageCircle size={18}/> Conhecer nosso espaço</button></div></div></section>

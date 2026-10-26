@@ -331,3 +331,10 @@
   .jt-site .hero h1{font-size:32px;letter-spacing:-.6px}
   .jt-site .hero-copy.center-hero>.eyebrow{font-size:9px;letter-spacing:.7px}
 }
+
+
+/* Remove o traço decorativo antes das especialidades no topo */
+.jt-site .hero-copy.center-hero>.eyebrow::before{
+  display:none;
+  content:none;
+}

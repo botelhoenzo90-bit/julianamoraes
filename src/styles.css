@@ -338,3 +338,23 @@
   display:none;
   content:none;
 }
+
+
+/* Galeria de antes e depois — espaços reservados para futuras fotos */
+.jt-site .before-after-section{background:#fbf7ee;padding:68px 0}
+.jt-site .before-after-section .section-heading{max-width:820px;margin:0 auto 34px}
+.jt-site .before-after-section .section-heading p{font-size:15px;line-height:1.8}
+.jt-site .before-after-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.jt-site .before-after-card{min-width:0;overflow:hidden;border:1px solid rgba(168,132,62,.3);border-radius:22px;background:#fffdf9;box-shadow:0 14px 34px rgba(75,55,30,.07)}
+.jt-site .before-after-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:#eadfca}
+.jt-site .before-after-photo{position:relative;aspect-ratio:4/5;min-width:0;overflow:hidden;background:linear-gradient(145deg,#f5ead7,#fffdf9);display:grid;place-items:center}
+.jt-site .before-after-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:1}
+.jt-site .before-after-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:10px;color:#a18448;font-size:12px;text-align:center}
+.jt-site .before-after-placeholder svg{opacity:.75}
+.jt-site .before-after-label{position:absolute;left:10px;top:10px;z-index:2;padding:7px 10px;border-radius:999px;background:rgba(255,253,249,.94);color:#6f5627;font-size:10px;font-weight:800;letter-spacing:1.2px;box-shadow:0 3px 10px rgba(30,20,10,.08)}
+.jt-site .before-after-label.depois{background:#a88743;color:#fffdf6}
+.jt-site .before-after-caption{padding:17px 18px 19px;text-align:left}
+.jt-site .before-after-caption>span{font-size:10px;font-weight:800;letter-spacing:1.5px;color:#9b762e}
+.jt-site .before-after-caption p{font-size:13px;line-height:1.6;color:#706a62;margin:7px 0 0}
+.jt-site .before-after-note{margin:22px auto 0;max-width:760px;text-align:center;font-size:12px;line-height:1.7;color:#777066}
+@media(max-width:780px){.jt-site .before-after-section{padding:52px 0}.jt-site .before-after-grid{grid-template-columns:1fr;gap:16px;max-width:520px;margin:0 auto}.jt-site .before-after-pair{grid-template-columns:repeat(2,minmax(0,1fr))}.jt-site .before-after-photo{aspect-ratio:4/3}.jt-site .before-after-caption{padding:15px 16px}}

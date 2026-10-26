@@ -98,31 +98,33 @@ function Index() {
           <div className="section-heading center">
             <span className="eyebrow">RESULTADOS REAIS</span>
             <h2>Antes e depois: cada detalhe <em>faz diferença.</em></h2>
-            <p>Veja a evolução dos procedimentos realizados por Juliana. As imagens serão adicionadas aqui assim que a galeria estiver pronta.</p>
+            <p>Uma galeria para apresentar os resultados dos procedimentos realizados por Juliana.</p>
           </div>
           <div className="before-after-grid">
-            {[1,2,3].map((caso) => (
+            {[1, 2, 3].map((caso) => (
               <article className="before-after-card" key={caso}>
                 <div className="before-after-pair">
-                  {(["antes","depois"] as const).map((fase) => (
+                  {["antes", "depois"].map((fase) => (
                     <div className="before-after-photo" key={fase}>
+                      <div className="before-after-placeholder"><Sparkles size={22} /><span>Foto do {fase}</span></div>
                       <img
                         src={`/antes-depois/caso-${caso}-${fase}.jpg`}
-                        alt={`Caso ${caso} — ${fase} do procedimento`}
+                        alt={`Caso ${caso}: ${fase} do procedimento`}
                         loading="lazy"
-                        onLoad={(e) => { const placeholder = e.currentTarget.parentElement?.querySelector(".before-after-placeholder"); if (placeholder) (placeholder as HTMLElement).style.display = "none"; }}
-                        onError={(e) => { e.currentTarget.style.display = "none"; }}
+                        onError={(e) => { e.currentTarget.style.opacity = "0"; }}
                       />
-                      <div className="before-after-placeholder"><Sparkles size={22}/><span>Adicionar foto</span></div>
                       <span className={`before-after-label ${fase}`}>{fase.toUpperCase()}</span>
                     </div>
                   ))}
                 </div>
-                <div className="before-after-caption"><span>CASO {String(caso).padStart(2,"0")}</span><p>Resultado após avaliação e procedimento personalizado.</p></div>
+                <div className="before-after-caption">
+                  <span>CASO {String(caso).padStart(2, "0")}</span>
+                  <p>Resultado individual — imagens a serem adicionadas.</p>
+                </div>
               </article>
             ))}
           </div>
-          <p className="before-after-note">Os resultados variam conforme as características individuais e os cuidados de cada pessoa.</p>
+          <p className="before-after-note">Os resultados variam conforme as características individuais. As imagens devem ser publicadas com autorização.</p>
         </div>
       </section>
 

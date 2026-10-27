@@ -145,7 +145,6 @@ function Index() {
               ))}
             </div>
           </div>
-          <p className="before-after-note">Os resultados variam conforme as características individuais. As imagens devem ser publicadas com autorização.</p>
         </div>
       </section>
 

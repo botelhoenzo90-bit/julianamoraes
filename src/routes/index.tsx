@@ -35,7 +35,6 @@ const baItems = [
   { video: false, src: baDermaplaning.url, title: "CASO 09", text: "Antes e depois — dermaplaning.", alt: "Antes e depois de dermaplaning" },
   { video: false, src: baLimpezaFacial.url, title: "CASO 10", text: "Antes e depois — limpeza de pele facial.", alt: "Antes e depois de limpeza de pele facial" },
   { video: false, src: baPumpUp.url, title: "CASO 11", text: "Antes e depois — Pump Up (vacuoterapia corporal).", alt: "Antes e depois de Pump Up, vacuoterapia corporal" },
-  { video: false, src: "/antes-depois/image.png", title: "CASO 12", text: "Novo registro de antes e depois enviado pela profissional.", alt: "Novo registro de antes e depois de procedimento estético" },
 ];
 const SHARE_IMG = "https://julianamoraes.lovable.app" + shareAsset.url;
 
@@ -124,20 +123,26 @@ function Index() {
           <div className="section-heading center">
             <span className="eyebrow">RESULTADOS REAIS</span>
             <h2>Antes e depois: cada detalhe <em>faz diferença.</em></h2>
-            <p>Confira o registro de resultado compartilhado por Juliana Moraes.</p>
+            <p>Uma galeria deslizante com registros reais dos procedimentos realizados por Juliana.</p>
           </div>
-          <div className="before-after-window" aria-label="Carrossel de antes e depois">
+          <div className="before-after-window">
             <div className="before-after-track">
-              <article className="before-after-card">
-                <div className="before-after-media">
-                  <img src="/antes-depois/image.png" alt="Registro de antes e depois de procedimento estético realizado por Juliana Moraes" loading="lazy" />
-                  <span className="before-after-tag">ANTES E DEPOIS</span>
-                </div>
-                <div className="before-after-caption">
-                  <span>RESULTADO</span>
-                  <p>Imagem de resultado compartilhada pela profissional.</p>
-                </div>
-              </article>
+              {[...baItems, ...baItems].map((item, i) => (
+                <article className="before-after-card" key={item.title + i}>
+                  <div className="before-after-media">
+                    {item.video ? (
+                      <video src={item.src} autoPlay muted loop playsInline preload="auto" />
+                    ) : (
+                      <img src={item.src} alt={item.alt} loading="lazy" />
+                    )}
+                    <span className="before-after-tag">ANTES E DEPOIS</span>
+                  </div>
+                  <div className="before-after-caption">
+                    <span>{item.title}</span>
+                    <p>{item.text}</p>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
           <p className="before-after-note">Os resultados variam conforme as características individuais. As imagens devem ser publicadas com autorização.</p>

@@ -21,6 +21,7 @@ import baEstriasBraco2 from "@/assets/ba-estrias-braco-2.png.asset.json";
 import baCicatriz from "@/assets/ba-cicatriz.png.asset.json";
 import baDermaplaning from "@/assets/ba-dermaplaning.png.asset.json";
 import baLimpezaFacial from "@/assets/ba-limpeza-facial.png.asset.json";
+import baPumpUp from "@/assets/ba-pump-up.png.asset.json";
 
 const baItems = [
   { video: true, src: baVideoAsset.url, title: "CASO 01", text: "Registro em vídeo do antes e depois do procedimento.", alt: "Vídeo do antes e depois do procedimento" },
@@ -33,6 +34,7 @@ const baItems = [
   { video: false, src: baCicatriz.url, title: "CASO 08", text: "Antes e depois — cicatriz cirúrgica.", alt: "Antes e depois de cicatriz cirúrgica" },
   { video: false, src: baDermaplaning.url, title: "CASO 09", text: "Antes e depois — dermaplaning.", alt: "Antes e depois de dermaplaning" },
   { video: false, src: baLimpezaFacial.url, title: "CASO 10", text: "Antes e depois — limpeza de pele facial.", alt: "Antes e depois de limpeza de pele facial" },
+  { video: false, src: baPumpUp.url, title: "CASO 11", text: "Antes e depois — Pump Up (vacuoterapia corporal).", alt: "Antes e depois de Pump Up, vacuoterapia corporal" },
 ];
 const SHARE_IMG = "https://julianamoraes.lovable.app" + shareAsset.url;
 

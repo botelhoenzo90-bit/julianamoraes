@@ -11,6 +11,13 @@ import olheirasAsset from "@/assets/neutralizacao-olheiras.png.asset.json";
 import coloracaoAsset from "@/assets/design-com-coloracao.png.asset.json";
 import ciliosAsset from "@/assets/cilios-tufinho.png.asset.json";
 import clareamentoAsset from "@/assets/clareamento-regiao-intima.png.asset.json";
+import baVideoAsset from "@/assets/antes-depois-video.mp4.asset.json";
+import baFotoAsset from "@/assets/antes-depois-caso-01.png.asset.json";
+
+const baItems = [
+  { video: true, src: baVideoAsset.url, title: "CASO 01", text: "Registro em vídeo do antes e depois do procedimento.", alt: "Vídeo do antes e depois do procedimento" },
+  { video: false, src: baFotoAsset.url, title: "CASO 02", text: "Comparativo de antes e depois do procedimento.", alt: "Foto comparando o antes e o depois do procedimento" },
+];
 const SHARE_IMG = "https://julianamoraes.lovable.app" + shareAsset.url;
 
 export const Route = createFileRoute("/")({
@@ -100,29 +107,25 @@ function Index() {
             <h2>Antes e depois: cada detalhe <em>faz diferença.</em></h2>
             <p>Uma galeria para apresentar os resultados dos procedimentos realizados por Juliana.</p>
           </div>
-          <div className="before-after-grid">
-            {[1, 2, 3].map((caso) => (
-              <article className="before-after-card" key={caso}>
-                <div className="before-after-pair">
-                  {["antes", "depois"].map((fase) => (
-                    <div className="before-after-photo" key={fase}>
-                      <div className="before-after-placeholder"><Sparkles size={22} /><span>Foto do {fase}</span></div>
-                      <img
-                        src={`/antes-depois/caso-${caso}-${fase}.jpg`}
-                        alt={`Caso ${caso}: ${fase} do procedimento`}
-                        loading="lazy"
-                        onError={(e) => { e.currentTarget.style.opacity = "0"; }}
-                      />
-                      <span className={`before-after-label ${fase}`}>{fase.toUpperCase()}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="before-after-caption">
-                  <span>CASO {String(caso).padStart(2, "0")}</span>
-                  <p>Resultado individual — imagens a serem adicionadas.</p>
-                </div>
-              </article>
-            ))}
+          <div className="before-after-window">
+            <div className="before-after-track">
+              {[...baItems, ...baItems].map((item, i) => (
+                <article className="before-after-card" key={item.title + i}>
+                  <div className="before-after-media">
+                    {item.video ? (
+                      <video src={item.src} autoPlay muted loop playsInline preload="auto" />
+                    ) : (
+                      <img src={item.src} alt={item.alt} loading="lazy" />
+                    )}
+                    <span className="before-after-tag">ANTES E DEPOIS</span>
+                  </div>
+                  <div className="before-after-caption">
+                    <span>{item.title}</span>
+                    <p>{item.text}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
           <p className="before-after-note">Os resultados variam conforme as características individuais. As imagens devem ser publicadas com autorização.</p>
         </div>

@@ -351,7 +351,7 @@
 .jt-site .before-after-card{width:290px;flex:none;overflow:hidden;border:1px solid rgba(168,132,62,.3);border-radius:22px;background:#fffdf9;box-shadow:0 14px 34px rgba(75,55,30,.07);text-align:center}
 .jt-site .before-after-media{position:relative;width:100%;height:500px;overflow:hidden;background:#eadfca}
 .jt-site .before-after-media img,.jt-site .before-after-media video{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
-.jt-site .before-after-tag{position:absolute;left:50%;top:12px;transform:translateX(-50%);z-index:2;padding:7px 12px;border-radius:999px;background:rgba(255,253,249,.94);color:#6f5627;font-size:10px;font-weight:800;letter-spacing:1.2px;box-shadow:0 3px 10px rgba(30,20,10,.08);white-space:nowrap}
+.jt-site .before-after-tag{position:absolute;left:0;right:0;top:12px;width:max-content;max-width:calc(100% - 20px);margin-inline:auto;z-index:2;padding:7px 12px;border-radius:999px;background:rgba(255,253,249,.94);color:#6f5627;font-size:10px;font-weight:800;letter-spacing:1.2px;box-shadow:0 3px 10px rgba(30,20,10,.08);white-space:nowrap}
 .jt-site .before-after-caption{padding:15px 17px 17px}
 .jt-site .before-after-caption>span{font-size:10px;font-weight:800;letter-spacing:1.5px;color:#9b762e}
 .jt-site .before-after-caption p{font-size:13px;line-height:1.6;color:#706a62;margin:6px 0 0}

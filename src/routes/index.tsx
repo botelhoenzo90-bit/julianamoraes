@@ -22,6 +22,7 @@ import baCicatriz from "@/assets/ba-cicatriz.png.asset.json";
 import baDermaplaning from "@/assets/ba-dermaplaning.png.asset.json";
 import baLimpezaFacial from "@/assets/ba-limpeza-facial.png.asset.json";
 import baPumpUp from "@/assets/ba-pump-up.png.asset.json";
+import microdermeAsset from "@/assets/tratamento-estrias-microderme.png.asset.json";
 
 const baItems = [
   { video: true, src: baVideoAsset.url, title: "CASO 01", text: "Registro em vídeo do antes e depois do procedimento.", alt: "Vídeo do antes e depois do procedimento" },
@@ -70,7 +71,7 @@ const procedures = [
   { title: "Drenagem Linfática Pós-Operatório", price: "R$ 99,90", text: "Cuidado para auxiliar no conforto e na recuperação, conforme liberação profissional.", image: procedureImage("Massagem abdominal relaxante no spa.png") },
   { title: "Design de Sobrancelhas com Henna", price: "R$ 45", text: "Modela e preenche as sobrancelhas, valorizando o olhar com efeito natural.", image: procedureImage("Aplicação de Henna nas Sobrancelhas.png") },
   { title: "Design com Coloração", price: "R$ 60", text: "Realça e define as sobrancelhas com coloração dos fios.", image: coloracaoAsset.url },
-  { title: "Tratamento de Estrias (Microderme)", price: "A partir de R$ 150", text: "Tratamento estético voltado à melhora da aparência de estrias brancas e roxas.", image: procedureImage("Tratamento de Estrias com Dermapen.png") },
+  { title: "Tratamento de Estrias (Microderme)", price: "A partir de R$ 150", text: "Tratamento estético com ativos, voltado à melhora da aparência de estrias brancas e roxas.", image: microdermeAsset.url },
   { title: "Aréolas Realistas", price: "R$ 1.300", text: "Pigmentação estética com efeito realista para reconstrução visual da aréola.", image: procedureImage("images 9 aerola.jpg") },
   { title: "Camuflagem de Cicatriz", price: "Sob consulta", text: "Pigmentação estética para suavizar visualmente a aparência de cicatrizes.", image: procedureImage("Camuflagem de cicatriz com micropigmentação.png") },
   { title: "Neutralização de Olheiras", price: "R$ 800,00", text: "Procedimento de pigmentação para harmonizar a tonalidade da região abaixo dos olhos. Valor sem retoque.", image: olheirasAsset.url },

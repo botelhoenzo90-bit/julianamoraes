@@ -366,3 +366,17 @@
 .jt-site section.before-after-section#antes-depois .before-after-track{display:flex!important;width:max-content!important;}
 .jt-site section.before-after-section#antes-depois .before-after-card{display:block!important;}
 @media(max-width:780px){.jt-site section.before-after-section#antes-depois{padding:52px 0!important}}
+
+
+/* Antes e depois: usar a imagem enviada sem cortar o conteúdo */
+.jt-site section.before-after-section#antes-depois .before-after-window{max-width:760px;margin:0 auto;padding:5px 10px 18px;overflow:hidden!important}
+.jt-site section.before-after-section#antes-depois .before-after-track{width:100%!important;max-width:100%;justify-content:center;animation:none!important}
+.jt-site section.before-after-section#antes-depois .before-after-card{width:min(100%,680px)!important;max-width:100%;margin:0 auto}
+.jt-site section.before-after-section#antes-depois .before-after-media{height:auto!important;min-height:240px;max-height:560px;aspect-ratio:4/3;background:#f0e8d9;display:flex;align-items:center;justify-content:center}
+.jt-site section.before-after-section#antes-depois .before-after-media img{width:100%;height:100%;max-height:560px;object-fit:contain!important;object-position:center;background:#f0e8d9}
+@media(max-width:780px){
+  .jt-site section.before-after-section#antes-depois .before-after-window{margin:0;padding:4px 0 14px}
+  .jt-site section.before-after-section#antes-depois .before-after-card{width:100%!important;border-radius:16px}
+  .jt-site section.before-after-section#antes-depois .before-after-media{min-height:220px;max-height:460px;aspect-ratio:3/4}
+  .jt-site section.before-after-section#antes-depois .before-after-media img{max-height:460px}
+}

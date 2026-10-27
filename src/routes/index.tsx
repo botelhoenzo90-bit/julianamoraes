@@ -13,10 +13,26 @@ import ciliosAsset from "@/assets/cilios-tufinho.png.asset.json";
 import clareamentoAsset from "@/assets/clareamento-regiao-intima.png.asset.json";
 import baVideoAsset from "@/assets/antes-depois-video.mp4.asset.json";
 import baFotoAsset from "@/assets/antes-depois-caso-01.png.asset.json";
+import baEstriasAbdomen from "@/assets/ba-estrias-abdomen.png.asset.json";
+import baEstriasAbdomen2 from "@/assets/ba-estrias-abdomen-2.png.asset.json";
+import baEstriasAbdomen3 from "@/assets/ba-estrias-abdomen-3.png.asset.json";
+import baEstriasBraco from "@/assets/ba-estrias-braco.png.asset.json";
+import baEstriasBraco2 from "@/assets/ba-estrias-braco-2.png.asset.json";
+import baCicatriz from "@/assets/ba-cicatriz.png.asset.json";
+import baDermaplaning from "@/assets/ba-dermaplaning.png.asset.json";
+import baLimpezaFacial from "@/assets/ba-limpeza-facial.png.asset.json";
 
 const baItems = [
   { video: true, src: baVideoAsset.url, title: "CASO 01", text: "Registro em vídeo do antes e depois do procedimento.", alt: "Vídeo do antes e depois do procedimento" },
   { video: false, src: baFotoAsset.url, title: "CASO 02", text: "Comparativo de antes e depois do procedimento.", alt: "Foto comparando o antes e o depois do procedimento" },
+  { video: false, src: baEstriasAbdomen.url, title: "CASO 03", text: "Antes e depois — estrias no abdômen.", alt: "Antes e depois de estrias no abdômen" },
+  { video: false, src: baEstriasAbdomen2.url, title: "CASO 04", text: "Antes e depois — estrias no abdômen.", alt: "Antes e depois de estrias no abdômen" },
+  { video: false, src: baEstriasAbdomen3.url, title: "CASO 05", text: "Antes e depois — estrias no abdômen.", alt: "Antes e depois de estrias no abdômen" },
+  { video: false, src: baEstriasBraco.url, title: "CASO 06", text: "Antes e depois — estrias no braço.", alt: "Antes e depois de estrias no braço" },
+  { video: false, src: baEstriasBraco2.url, title: "CASO 07", text: "Antes e depois — estrias no braço.", alt: "Antes e depois de estrias no braço" },
+  { video: false, src: baCicatriz.url, title: "CASO 08", text: "Antes e depois — cicatriz cirúrgica.", alt: "Antes e depois de cicatriz cirúrgica" },
+  { video: false, src: baDermaplaning.url, title: "CASO 09", text: "Antes e depois — dermaplaning.", alt: "Antes e depois de dermaplaning" },
+  { video: false, src: baLimpezaFacial.url, title: "CASO 10", text: "Antes e depois — limpeza de pele facial.", alt: "Antes e depois de limpeza de pele facial" },
 ];
 const SHARE_IMG = "https://julianamoraes.lovable.app" + shareAsset.url;
 

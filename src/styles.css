@@ -380,3 +380,17 @@
   .jt-site section.before-after-section#antes-depois .before-after-media{min-height:220px;max-height:460px;aspect-ratio:3/4}
   .jt-site section.before-after-section#antes-depois .before-after-media img{max-height:460px}
 }
+
+
+/* Restaurar o carrossel original de antes e depois, mantendo o novo caso adicionado */
+.jt-site section.before-after-section#antes-depois .before-after-window{max-width:none;margin:0 -22px;padding:5px 22px 15px;overflow:hidden!important}
+.jt-site section.before-after-section#antes-depois .before-after-track{width:max-content!important;max-width:none;justify-content:flex-start;gap:18px;animation:baLoop 24s linear infinite!important}
+.jt-site section.before-after-section#antes-depois .before-after-card{width:290px!important;max-width:none;flex:none;margin:0; border-radius:22px}
+.jt-site section.before-after-section#antes-depois .before-after-media{height:500px!important;min-height:0;max-height:none;aspect-ratio:auto;background:#eadfca}
+.jt-site section.before-after-section#antes-depois .before-after-media img,.jt-site section.before-after-section#antes-depois .before-after-media video{width:100%;height:100%;max-height:none;object-fit:cover!important;object-position:center;background:transparent}
+.jt-site section.before-after-section#antes-depois .before-after-window:hover .before-after-track{animation-play-state:paused}
+@media(max-width:780px){
+  .jt-site section.before-after-section#antes-depois .before-after-window{margin:0 -22px;padding:4px 22px 14px}
+  .jt-site section.before-after-section#antes-depois .before-after-card{width:250px!important;border-radius:16px}
+  .jt-site section.before-after-section#antes-depois .before-after-media{height:430px!important;min-height:0;max-height:none;aspect-ratio:auto}
+}

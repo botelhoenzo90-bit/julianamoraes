@@ -125,7 +125,8 @@ function Index() {
             <h2>Antes e depois: cada detalhe <em>faz diferença.</em></h2>
             <p>Uma galeria deslizante com registros reais dos procedimentos realizados por Juliana.</p>
           </div>
-          <div className="before-after-window">
+        </div>
+        <div className="before-after-window">
             <div className="before-after-track">
               {[...baItems, ...baItems].map((item, i) => (
                 <article className="before-after-card" key={item.title + i}>
@@ -145,8 +146,8 @@ function Index() {
               ))}
             </div>
           </div>
-        </div>
       </section>
+
 
       <section className="section reviews-section" id="experiencia"><div className="reviews-heading"><span className="eyebrow">ATENDIMENTO PERSONALIZADO</span><h2>Cuidado individual em cada <em>etapa.</em></h2><p>Converse com Juliana, conheça os procedimentos e tire suas dúvidas antes de agendar.</p></div><div className="reviews-window"><div className="reviews-track">{[1,2,3,4,5,6,1,2,3,4,5,6].map((n,i)=><article className="review-card" key={i}><div className="review-stars">{[1,2,3,4,5].map(star=><Star key={star} size={15} fill="currentColor"/>)}</div><p>“Um atendimento acolhedor, com atenção aos detalhes e orientação em cada etapa do procedimento.”</p><div className="review-footer"><div className="review-avatar">J</div><div><strong>Juliana Moraes</strong><span>Atendimento individualizado</span></div></div></article>)}</div></div><div className="section-action center"><button className="btn btn-primary" onClick={() => goWhatsapp("conhecer os procedimentos e agendar")}><MessageCircle size={18}/> Quero agendar</button></div></section>
 

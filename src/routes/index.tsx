@@ -105,7 +105,7 @@ function Index() {
           <div className="section-heading center">
             <span className="eyebrow">RESULTADOS REAIS</span>
             <h2>Antes e depois: cada detalhe <em>faz diferença.</em></h2>
-            <p>Uma galeria para apresentar os resultados dos procedimentos realizados por Juliana.</p>
+            <p>Uma galeria deslizante com registros reais dos procedimentos realizados por Juliana.</p>
           </div>
           <div className="before-after-window">
             <div className="before-after-track">

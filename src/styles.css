@@ -348,7 +348,7 @@
 .jt-site .before-after-track{display:flex;width:max-content;gap:18px;animation:baLoop 24s linear infinite}
 @keyframes baLoop{to{transform:translateX(calc(-50% - 9px))}}
 .jt-site .before-after-window:hover .before-after-track{animation-play-state:running}
-.jt-site .before-after-card{width:290px;flex:none;overflow:hidden;border:1px solid rgba(168,132,62,.3);border-radius:22px;background:#fffdf9;box-shadow:0 14px 34px rgba(75,55,30,.07);text-align:left}
+.jt-site .before-after-card{width:290px;flex:none;overflow:hidden;border:1px solid rgba(168,132,62,.3);border-radius:22px;background:#fffdf9;box-shadow:0 14px 34px rgba(75,55,30,.07);text-align:center}
 .jt-site .before-after-media{position:relative;width:100%;height:500px;overflow:hidden;background:#eadfca}
 .jt-site .before-after-media img,.jt-site .before-after-media video{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .jt-site .before-after-tag{position:absolute;left:10px;top:10px;z-index:2;padding:7px 10px;border-radius:999px;background:rgba(255,253,249,.94);color:#6f5627;font-size:10px;font-weight:800;letter-spacing:1.2px;box-shadow:0 3px 10px rgba(30,20,10,.08)}

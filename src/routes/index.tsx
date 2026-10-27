@@ -35,6 +35,7 @@ const baItems = [
   { video: false, src: baDermaplaning.url, title: "CASO 09", text: "Antes e depois — dermaplaning.", alt: "Antes e depois de dermaplaning" },
   { video: false, src: baLimpezaFacial.url, title: "CASO 10", text: "Antes e depois — limpeza de pele facial.", alt: "Antes e depois de limpeza de pele facial" },
   { video: false, src: baPumpUp.url, title: "CASO 11", text: "Antes e depois — Pump Up (vacuoterapia corporal).", alt: "Antes e depois de Pump Up, vacuoterapia corporal" },
+  { video: false, src: "/antes-depois/image.png", title: "CASO 12", text: "Novo registro de antes e depois enviado pela profissional.", alt: "Novo registro de antes e depois de procedimento estético" },
 ];
 const SHARE_IMG = "https://julianamoraes.lovable.app" + shareAsset.url;
 

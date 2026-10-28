@@ -24,6 +24,7 @@ import baDermaplaning from "@/assets/ba-dermaplaning.png.asset.json";
 import baLimpezaFacial from "@/assets/ba-limpeza-facial.png.asset.json";
 import baPumpUp from "@/assets/ba-pump-up.png.asset.json";
 import microdermeAsset from "@/assets/tratamento-estrias-microderme.png.asset.json";
+import tatuagemAsset from "@/assets/remocao-tatuagem.png.asset.json";
 
 const baItems = [
   { video: true, src: baVideoAsset.url, title: "CASO 01", text: "Registro em vídeo do antes e depois do procedimento.", alt: "Vídeo do antes e depois do procedimento" },

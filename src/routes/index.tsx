@@ -85,7 +85,7 @@ const procedures = [
   { title: "Dermaplaning + Revitalização", price: "R$ 120", text: "Remove células superficiais e promove uma aparência renovada e luminosa.", image: procedureImage("Tratamento Facial Luxuoso com Dermaplaning.png") },
   { title: "Peeling Químico", price: "A partir de R$ 250", text: "Tratamento facial escolhido conforme as características e necessidades da pele.", image: procedureImage("Tratamento Facial com Peeling Químico.png") },
   { title: "Depilação com Cera Hidrossolúvel", price: "Sob consulta", text: "Remoção dos pelos com atenção ao conforto e cuidado da pele.", image: procedureImage("Depilação com cera dourada no spa.png") },
-  { title: "Remoção de Tatuagem a Laser", price: "Sob consulta", text: "Clareamento e remoção gradual de tatuagens com tecnologia a laser e avaliação individual.", image: undefined },
+  { title: "Remoção de Tatuagem a Laser", price: "Sob consulta", text: "Clareamento e remoção gradual de tatuagens com tecnologia a laser e avaliação individual.", image: tatuagemAsset.url },
   { title: "Brow Lamination", price: "R$ 150,00", text: "Alinha e modela os fios das sobrancelhas para um visual mais definido e volumoso.", image: procedureImage("Laminação de sobrancelhas em close-up.png") },
 ];
 

@@ -365,3 +365,5 @@
 .jt-site section.before-after-section#antes-depois .before-after-track{display:flex!important;width:max-content!important;}
 .jt-site section.before-after-section#antes-depois .before-after-card{display:block!important;}
 @media(max-width:780px){.jt-site section.before-after-section#antes-depois{padding:52px 0!important}}
+.procedure-track{gap:0!important}.procedure-track>.procedure-card{margin-right:15px}@keyframes procedureLoop{to{transform:translateX(-50%)}}
+.clinic-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%;max-width:720px}.clinic-photos img{width:100%;height:440px;object-fit:cover;border-radius:22px;display:block}@media(max-width:640px){.clinic-photos img{height:280px}}
